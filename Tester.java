@@ -6,5 +6,6 @@ public class Tester{
         System.out.println(a.add(b).toString());
         System.out.println(a.multiply(b).toString());
         System.out.println(a.divide(b).toString());
+        System.out.println(a.subtract(b).toString());
     }
 }

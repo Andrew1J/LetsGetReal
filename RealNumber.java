@@ -33,11 +33,7 @@ public class RealNumber{
         return new RealNumber(value/other.value);
     }
 
-    /*
-    *Return a new RealNumber that has the value of:
-    *this minus the other
-    */
     public RealNumber subtract(RealNumber other){
-        return null;
+        return new RealNumber(value-other.value);
     }
 }
