@@ -25,20 +25,12 @@ public class RealNumber{
         return new RealNumber(other.value+value);
     }
 
-    /*
-    *Return a new RealNumber that has the value of:
-    *the product of this and the other
-    */
     public RealNumber multiply(RealNumber other){
         return new RealNumber(other.value*value);
     }
 
-    /*
-    *Return a new RealNumber that has the value of:
-    *this divided by the other
-    */
     public RealNumber divide(RealNumber other){
-        return null;
+        return new RealNumber(value/other.value);
     }
 
     /*
