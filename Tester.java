@@ -11,10 +11,13 @@ public class Tester{
 
         //RationalNumber class tests
         RationalNumber c = new RationalNumber(3,2);
-        RationalNumber d = new RationalNumber(3,-2);
-        RationalNumber e = new RationalNumber(3,0);
+        RationalNumber d = new RationalNumber(2,-2);
+        RationalNumber e = new RationalNumber(6,0);
         System.out.println(c.getValue());
         System.out.println(d.getValue());
         System.out.println(e.getValue());
+        System.out.println(c.getNumerator());
+        System.out.println(d.getNumerator());
+        System.out.println(e.getNumerator());
     }
 }
