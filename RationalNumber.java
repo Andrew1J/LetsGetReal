@@ -41,18 +41,21 @@ public class RationalNumber extends RealNumber{
     }
 
     private static int gcd(int a, int b){
+        if(a==0)return b;
+        if(b==0)return a;
         int big = Math.max(a,b);
         int small = Math.min(a,b);
-        while(big%small!=0){
-            big = small;
+        while((big%small)!=0){
             small = big%small;
+            big = small;
         }
         return small;
     }
 
     private void reduce(){
-        numerator = numerator / gcd(numerator,denominator);
-        denominator = denominator / gcd(numerator,denominator);
+        int divide = gcd(numerator,denominator);
+        numerator = (numerator / divide);
+        denominator = (denominator / divide);
     }
 
     public RationalNumber multiply(RationalNumber other){
