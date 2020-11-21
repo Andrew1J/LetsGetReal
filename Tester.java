@@ -4,5 +4,6 @@ public class Tester{
         RealNumber b = new RealNumber(2.00000000001);
         System.out.println(a.equals(b));
         System.out.println(a.add(b).toString());
+        System.out.println(a.multiply(b).toString());
     }
 }
