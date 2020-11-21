@@ -26,12 +26,9 @@ public class RationalNumber extends RealNumber{
     public int getDenominator(){
         return denominator;
     }
-    /**
-    *@return a new RationalNumber that has the same numerator
-    *and denominator as this RationalNumber but reversed.
-    */
+
     public RationalNumber reciprocal(){
-        return null;
+        return new RationalNumber(denominator,numerator);
     }
     /**
     *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
