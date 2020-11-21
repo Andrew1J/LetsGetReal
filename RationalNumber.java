@@ -67,10 +67,8 @@ public class RationalNumber extends RealNumber{
         return new RationalNumber((numerator * other.getDenominator()) + (other.getNumerator() * denominator),
         denominator * other.getDenominator());
     }
-    /**
-    *Return a new RationalNumber that this minus the other
-    */
+
     public RationalNumber subtract(RationalNumber other){
-        return null;
+        return add(other.multiply(new RationalNumber(-1,1)));
     }
 }
