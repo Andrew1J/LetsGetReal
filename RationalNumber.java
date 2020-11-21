@@ -24,7 +24,7 @@ public class RationalNumber extends RealNumber{
     }
 
     public int getDenominator(){
-        return 0;
+        return denominator;
     }
     /**
     *@return a new RationalNumber that has the same numerator

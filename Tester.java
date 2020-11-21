@@ -19,5 +19,8 @@ public class Tester{
         System.out.println(c.getNumerator());
         System.out.println(d.getNumerator());
         System.out.println(e.getNumerator());
+        System.out.println(c.getDenominator());
+        System.out.println(d.getDenominator());
+        System.out.println(e.getDenominator());
     }
 }
