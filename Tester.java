@@ -13,7 +13,8 @@ public class Tester{
         RationalNumber c = new RationalNumber(3,2);
         RationalNumber d = new RationalNumber(2,-2);
         RationalNumber e = new RationalNumber(6,0);
-        RationalNumber f = new RationalNumber(3,2);
+        RationalNumber f = new RationalNumber(-3,2);
+        /*
         System.out.println(c.getValue());
         System.out.println(d.getValue());
         System.out.println(e.getValue());
@@ -25,5 +26,11 @@ public class Tester{
         System.out.println(e.getDenominator());
         System.out.println(c.reciprocal().toString());
         System.out.println(c.equals(f));
+        */
+        RationalNumber g = new RationalNumber(6,4);
+        System.out.println(g.toString());
+        System.out.println(d.add(c));
+        System.out.println(c.multiply(f));
+        System.out.println(c.subtract(f));
     }
 }
