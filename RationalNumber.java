@@ -13,6 +13,7 @@ public class RationalNumber extends RealNumber{
         }
         numerator = nume;
         denominator = deno;
+        reduce();
     }
 
     public double getValue(){
@@ -49,11 +50,6 @@ public class RationalNumber extends RealNumber{
         return small;
     }
 
-    /**
-    *Divide the numerator and denominator by the GCD
-    *This must be used to maintain that all RationalNumbers are
-    *reduced after construction.
-    */
     private void reduce(){
         numerator = numerator / gcd(numerator,denominator);
         denominator = denominator / gcd(numerator,denominator);
@@ -63,7 +59,7 @@ public class RationalNumber extends RealNumber{
     *Return a new RationalNumber that is the product of this and the other
     */
     public RationalNumber multiply(RationalNumber other){
-        return null;
+        return new RationalNumber(numerator * other.getNumerator(), denominator * other.getDenominator());
     }
 
     /**
