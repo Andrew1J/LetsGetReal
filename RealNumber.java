@@ -1,5 +1,6 @@
 public class RealNumber{
     private double value;
+
     public RealNumber(double v){
         value = v;
     }
@@ -11,12 +12,7 @@ public class RealNumber{
     public String toString(){
         return ""+getValue();
     }
-    //---------ONLY EDIT BELOW THIS LINE------------
 
-    /*
-    *Return true when the values are within 0.001% of eachother.
-    *Special case: if one is exactly zero, the other must be exactly zero.
-    */
     public boolean equals(RealNumber other){
         if(value==0||other.value==0){
             return value == 0 && other.value==0;
@@ -25,14 +21,8 @@ public class RealNumber{
         return Math.abs(value-other.value) <= (0.00001*value);
     }
 
-    /*
-    *Return a new RealNumber that has the value of:
-    *the sum of this and the other
-    */
     public RealNumber add(RealNumber other){
-        //other can be ANY RealNumber, including a RationalNumber
-        //or other subclasses of RealNumber (that aren't written yet)
-        return null;
+        return new RealNumber(other.value+value);
     }
 
     /*
