@@ -39,11 +39,6 @@ public class RationalNumber extends RealNumber{
         return numerator+"/"+denominator;
     }
 
-    /**Calculate the GCD of two integers.
-    *@param a the first integers
-    *@param b the second integer
-    *@return the value of the GCD
-    */
     private static int gcd(int a, int b){
         int big = Math.max(a,b);
         int small = Math.min(a,b);
@@ -60,7 +55,8 @@ public class RationalNumber extends RealNumber{
     *reduced after construction.
     */
     private void reduce(){
-
+        numerator = numerator / gcd(numerator,denominator);
+        denominator = denominator / gcd(numerator,denominator);
     }
     /******************Operations Return a new RationalNumber!!!!****************/
     /**
