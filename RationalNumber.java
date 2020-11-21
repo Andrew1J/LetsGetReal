@@ -43,8 +43,8 @@ public class RationalNumber extends RealNumber{
     private static int gcd(int a, int b){
         if(a==0)return b;
         if(b==0)return a;
-        int big = Math.max(a,b);
-        int small = Math.min(a,b);
+        int big = Math.max(Math.abs(a),Math.abs(b));
+        int small = Math.min(Math.abs(a),Math.abs(b));
         while((big%small)!=0){
             small = big%small;
             big = small;
