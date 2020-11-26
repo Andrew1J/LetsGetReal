@@ -6,14 +6,11 @@ public abstract class Number{
     return a positive value when this Number is larger than the other Number
     */
     public int compareTo(Number other){
-        //TO BE IMPLEMENTED
+        if(getValue()==other.getValue())return 0;
+        if(getValue()<other.getValue())return -1;
+        if(getValue()>other.getValue())return 1;
     }
 
-    /*
-    *Return true when the % difference of the values
-    *are within 0.00001 of eachother.
-    *Special case: if one is exactly zero, the other must be exactly zero.
-    */
     public boolean equals(Number other){
         if(getValue()==0||other.getValue()==0){
             return getValue() == 0 && other.getValue() == 0;
