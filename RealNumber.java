@@ -13,14 +13,6 @@ public class RealNumber{
         return ""+getValue();
     }
 
-    public boolean equals(RealNumber other){
-        if(value==0||other.value==0){
-            return value == 0 && other.value==0;
-        }
-        double c = value - other.value;
-        return Math.abs(value-other.value) <= (0.00001*value);
-    }
-
     public RealNumber add(RealNumber other){
         return new RealNumber(other.value+value);
     }
