@@ -1,14 +1,10 @@
 public abstract class Number{
     public abstract double getValue();
 
-    /*return 0 when this Number equals the other RealNumber
-    return a negative value when this Number is smaller than the other Number
-    return a positive value when this Number is larger than the other Number
-    */
     public int compareTo(Number other){
         if(getValue()==other.getValue())return 0;
         if(getValue()<other.getValue())return -1;
-        if(getValue()>other.getValue())return 1;
+        return 1;
     }
 
     public boolean equals(Number other){
